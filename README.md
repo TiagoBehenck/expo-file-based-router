@@ -1,5 +1,31 @@
 # Welcome to your Expo app 👋
 
+An example using nested routes, tabs, private routes and URL params.  
+Using hooks like useSession and persist the date with expo-secure-store.
+
+## Folder structure
+
+This structure based the navigation of app
+
+```bash
+.
+├── (private)
+│   ├── (tabs)
+│   │   ├── _layout.tsx
+│   │   ├── index.tsx
+│   │   └── two
+│   │       ├── _layout.tsx
+│   │       ├── index.tsx
+│   │       └── product
+│   │           └── [id].tsx
+│   └── _layout.tsx
+├── (public)
+│   ├── sign-in.tsx
+│   └── sign-up.tsx
+└── _layout.tsx
+```
+
+
 This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
 
 ## Get started
